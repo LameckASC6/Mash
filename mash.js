@@ -3,8 +3,9 @@
 function getHome(){
     let ownHouse = process.argv[2];
     let house = ["Mansion", "Apartment", "Shack", "House", "Parents Basement"];
+    let startHouse = house.length + 1;
     if (ownHouse){
-        house.splice(4,0, ownHouse);
+        house.splice(startHouse,0, ownHouse);
     }    
     let houseAnswer = Math.floor(Math.random()*house.length);
     return house[houseAnswer];
@@ -22,9 +23,10 @@ function getChildrenCount(){
 
 function getCar(){
     let ownCar = process.argv[4];
-    let car = ["Lambo", "Convertible", "Sudan", "Box with Wheels", "No Car"];
+    let car = ["1oHRrjU$J@^d", "Convertible", "Just a Wheel", "Sudan", "Box with Wheels", "No Car"];
+    let startCar = car.length + 1;
     if (ownCar){
-        car.splice(4,0, ownCar);
+        car.splice(startCar,0, ownCar);
     }    
     let carAnswer = Math.floor(Math.random()*car.length);
     return car[carAnswer];
@@ -33,8 +35,9 @@ function getCar(){
 function getCarrer(){
     let ownCarrer = process.argv[5];
     let carrer = ["Actor", "Pianist", "Scientist", "Physisist", "Software Engineer", "Parent's Basement"];
+    let startCarrer = carrer.length + 1;
     if (ownCarrer){
-        carrer.splice(5,0, ownCar);
+        carrer.splice(startCarrer,0, ownCarrer);
     }    
     let carrerAnswer = Math.floor(Math.random()*carrer.length);
     return carrer[carrerAnswer];
